@@ -41,7 +41,7 @@ The runnning agent will print it's reasoning and generated code at each iteratio
 
 ## Brief note about the agent
 
-The agent was built using Hugginface's smolagents framework. The agent was tweaked, though, to work as 
+The agent was built using Hugginface's [smolagents](https://huggingface.co/docs/smolagents/en/index) framework. The agent was tweaked, though, to work as 
 an "adaptive planner". This was done by setting it to produce a plan at each iteration and then keep each iteration short. The idea was to make it more iterative so that it could explore and change it's plan according to observations.
 
 ## Examples
