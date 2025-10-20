@@ -4,6 +4,7 @@
 
 The agent was developed in a conda environment. Please follow the steps below to reproduce the environment.
 
+```bash
 conda create --name smolagents python=3.11
 
 conda activate smolagents
@@ -11,16 +12,20 @@ conda activate smolagents
 pip install "smolagents[all]"
 
 conda install -c anaconda -c conda-forge matplotlib jupyter ipywidgets tqdm seaborn scikit-learn
+```
 
 ## Running the agent
 
 ### From terminal
+```python
 python data_analysis_agent.py
+```
+
 The script will ask the query and other information.
 
 ### From a jupyter notebook
+```python
 import data_analysis_agent
-
 
 data_analysis_agent.run(
     query="What was the average scheduled quantity in 2022?", # replace with your query
@@ -28,6 +33,8 @@ data_analysis_agent.run(
     processed_data_dirpath='data', # replace as needed
     api_key='', # Please enter your openai key here
 )
+```
+
 Running from a notebook is preferred since the agent can embed plots in it's final report.
 
 The runnning agent will print it's reasoning and generated code at each iteration.
