@@ -17,7 +17,7 @@ conda install -c anaconda -c conda-forge matplotlib jupyter ipywidgets tqdm seab
 ## Running the agent
 
 ### From terminal
-```python
+```bash
 python data_analysis_agent.py
 ```
 
@@ -29,7 +29,7 @@ import data_analysis_agent
 
 data_analysis_agent.run(
     query="What was the average scheduled quantity in 2022?", # replace with your query
-    data_filepath='pipeline_data.parket', # replace with the location of the data file
+    data_filepath='pipeline_data.parquet', # replace with the location of the data file
     processed_data_dirpath='data', # replace as needed
     api_key='', # Please enter your openai key here
 )
