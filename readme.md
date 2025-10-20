@@ -3,10 +3,15 @@
 ## Setting the environment
 
 The agent was developed in a conda environment. Please follow the steps below to reproduce the environment.
+
 conda create --name smolagents python=3.11
+
 conda activate smolagents
+
 pip install "smolagents[all]"
+
 conda install -c anaconda -c conda-forge matplotlib jupyter ipywidgets tqdm seaborn scikit-learn
+
 ## Running the agent
 
 ### From terminal
