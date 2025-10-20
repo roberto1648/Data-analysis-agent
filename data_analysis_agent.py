@@ -208,7 +208,7 @@ if __name__ == '__main__':
     )
     run(
         query=query,
-        data_filepath=data_filepath if data_filepath else 'pipeline_data.parket',
+        data_filepath=data_filepath if data_filepath else 'pipeline_data.parquet',
         processed_data_dirpath=processed_data_dirpath if processed_data_dirpath else 'data',
         api_key=api_key,
     )
