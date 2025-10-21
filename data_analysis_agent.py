@@ -150,7 +150,7 @@ def numericalize_string_columns(df_in):
     stois, itoses = {}, {}
 
     for col in cols:
-        num_ser, stoi, itos = numericalize(df_in[col])
+        num_ser, itos, stoi = numericalize(df_in[col])
         df_out[col] = num_ser.copy()
         stois[col] = copy.deepcopy(stoi)
         itoses[col] = copy.deepcopy(itos)
