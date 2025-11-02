@@ -13,6 +13,10 @@ pip install "smolagents[all]"
 
 conda install -c anaconda -c conda-forge matplotlib jupyter ipywidgets tqdm seaborn scikit-learn
 ```
+## Download the data
+Download the data from [here](https://drive.google.com/file/d/109vhmnSLN3oofjFdyb58l_rUZRa0d6C8/view?usp=drivesdk). 
+The data is pre-processed by turning unique string objects into integers. 
+While the agent could figure this out too, I found that it was better to help it out since I could do it faster using pandas.Series.apply() (see the code).
 
 ## Running the agent
 
